@@ -31,7 +31,7 @@ public class ProductService {
        return productRepository.findById(prodId).get();
     }
 
-    public void updateProduct(Product product, String id) {
+    public void updateProduct(Product product) {
         productRepository.save(product);
     }
     public void deleteProduct(String id) {
