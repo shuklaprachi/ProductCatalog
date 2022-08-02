@@ -35,6 +35,7 @@ public class ProductCatalogController {
     public void updateProduct(@RequestBody Product product, @PathVariable String id){
         productService.updateProduct(product, id);
      }
+    
     @RequestMapping(method = RequestMethod.DELETE, value="/products/{id}")
     public void deleteProduct(@PathVariable String id){
         productService.deleteProduct(id);
